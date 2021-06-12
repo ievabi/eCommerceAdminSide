@@ -13,11 +13,22 @@ function countTotal(productEl, priceEl, vatEl) {
   console.log(typeof endPrice);
 }
 
+// btn edit
 $(".edit").click(function () {
   const allRow = $(this).parents(".product_row");
 
-  let customerEl = allRow.find(".customer p");
-  let currentCustomer = customerEl.text();
+  //page elements values
+  let nameEl = allRow.find(".name");
+  let currentName = nameEl.text();
+
+  let streetEl = allRow.find(".street");
+  let currentStreet = streetEl.text();
+
+  let cityEl = allRow.find(".city");
+  let currentCity = cityEl.text();
+
+  let countryEl = allRow.find(".country");
+  let currentCountry = countryEl.text();
 
   let productEl = allRow.find(".product");
   let currentProduct = productEl.text();
@@ -28,23 +39,34 @@ $(".edit").click(function () {
   let vatEl = allRow.find(".vat");
   let currentVat = vatEl.text();
 
-  let modalCustomer = $("#input-customer").val(currentCustomer);
+  // make modal window with current element values
+  let modalName = $("#input-name").val(currentName);
+  let modalStreet = $("#input-street").val(currentStreet);
+  let modalCity = $("#input-city").val(currentCity);
+  let modalCountry = $("#input-country").val(currentCountry);
+
   let modalProduct = $("#input-product").val(currentProduct);
   let modalPrice = $("#input-price").val(currentPrice);
   const modalVat = $("#input-vat").val(currentVat);
 
+  // update elements values
   $("#save-category").click(function () {
-    customerEl.text(modalCustomer.val());
+    nameEl.text(modalName.val());
+    streetEl.text(modalStreet.val());
+    cityEl.text(modalCity.val());
+    countryEl.text(modalCountry.val());
+
     productEl.text(modalProduct.val());
     priceEl.text(modalPrice.val());
     vatEl.text(modalVat.val());
 
     countTotal(productEl, priceEl, vatEl);
 
-    $("#exampleModal").modal("toggle");
+    $("#exampleModal").modal("toggle"); // clear modal w.
   });
 });
 
+// btn delete
 $(".delete").click(function () {
   $(this).parents(".product_row").remove();
 });

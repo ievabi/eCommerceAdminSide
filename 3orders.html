@@ -90,15 +90,28 @@
                                 <div class="modal-body">
 
                                     <div class="mb-3">
-                                        <label for="input-customer" class="form-label">Customer information</label>
-
-                                        <textarea class="form-control input" id="input-customer" rows="4"></textarea>
+                                        <label for="input-name" class="form-label">Name & Surname:</label>
+                                        <input type="text" class="form-control" id="input-name">
                                     </div>
+                                    <div class="mb-3">
+                                        <label for="input-street" class="form-label">Street:</label>
+                                        <input type="text" class="form-control" id="input-street">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="input-city" class="form-label">City:</label>
+                                        <input type="text" class="form-control" id="input-city">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="input-country" class="form-label">Country:</label>
+                                        <input type="text" class="form-control" id="input-country">
+                                    </div>
+
+
                                     <div class="mb-3">
                                         <label for="input-product" class="form-label">Products</label>
                                         <input type="text" class="form-control" id="input-product">
-
                                     </div>
+
                                     <div class="mb-3">
                                         <label for="input-price" class="form-label">Price</label>
                                         <input type="text" class="form-control" id="input-price">
@@ -140,15 +153,15 @@
                         <tr class="product_row">
                             <td scope="row">1</td>
                             <td scope="row customer">
-                                <p>Lilu Dalas</p>
-                                <p> Lacplesa street 15</p>
-                                <p> Riga</p>
-                                <p> Latvia</p>
+                                <div class="name">Lilu Dalas</div>
+                                <div class="street"> Lacplesa street 15</div>
+                                <div class="city"> Riga</div>
+                                <div class="country"> Latvia</div>
                             </td>
                             <td class="product">2</td>
                             <td><span class="price">50.00</span><span> €</span></td>
                             <td><span class="vat"> 21.00</span><span> €</span></td>
-                            <td><span class="total">121.00</span><span> €</span></td>
+                            <td><span class="total">0.00</span><span> €</span></td>
                             <td><span class="badge bg-warning text-dark "> Pending</span> </td>
 
                             <td class="text-end">
@@ -159,6 +172,55 @@
                         </tr>
 
                         <tr class="product_row">
+                            <td scope="row">2</td>
+                            <td scope="row customer">
+                                <div class="name">Roy Krow</div>
+                                <div class="street"> Avotu street 4</div>
+                                <div class="city"> Riga</div>
+                                <div class="country"> Latvia</div>
+                            </td>
+                            <td class="product">4</td>
+                            <td><span class="price">40.00</span><span> €</span></td>
+                            <td><span class="vat"> 21.00</span><span> €</span></td>
+                            <td><span class="total">0.00</span><span> €</span></td>
+                            <td><span class="badge bg-success text-dark "> Completed</span> </td>
+
+                            <td class="text-end">
+                                <button style="width: 40%;" scope="col" class="btn btn-primary edit"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>
+                                <button style="width: 55%;" scope="col" class="btn btn-danger delete">Delete</button>
+                            </td>
+                        </tr>
+
+                        <tr class="product_row">
+                            <td scope="row">3</td>
+                            <td scope="row customer">
+                                <div class="name">Tom Smith</div>
+                                <div class="street"> Miera street 128</div>
+                                <div class="city"> Riga</div>
+                                <div class="country"> Latvia</div>
+                            </td>
+                            <td class="product">5</td>
+                            <td><span class="price">60.00</span><span> €</span></td>
+                            <td><span class="vat"> 21.00</span><span> €</span></td>
+                            <td><span class="total">0.00</span><span> €</span></td>
+                            <td><span class="badge bg-danger text-dark "> Canceled</span> </td>
+
+                            <td class="text-end">
+                                <button style="width: 40%;" scope="col" class="btn btn-primary edit"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>
+                                <button style="width: 55%;" scope="col" class="btn btn-danger delete">Delete</button>
+                            </td>
+                        </tr>
+
+
+
+
+
+
+
+
+                        <!-- <tr class="product_row">
                             <td scope="row">2</td>
                             <td scope="row">
                                 <p>Peter Due</p>
@@ -177,9 +239,9 @@
                                     data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>
                                 <button style="width: 55%;" scope="col" class="btn btn-danger delete">Delete</button>
                             </td>
-                        </tr>
+                        </tr> -->
 
-                        <tr class="product_row">
+                        <!-- <tr class="product_row">
                             <td scope="row">3</td>
                             <td scope="row">
                                 <p>Rony Smith</p>
@@ -198,7 +260,7 @@
                                     data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>
                                 <button style="width: 55%;" scope="col" class="btn btn-danger delete">Delete</button>
                             </td>
-                        </tr>
+                        </tr> -->
 
 
 
