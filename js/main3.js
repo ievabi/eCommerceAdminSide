@@ -61,7 +61,6 @@ $(".edit").click(function () {
     vatEl.text(modalVat.val());
 
     countTotal(productEl, priceEl, vatEl);
-
     $("#exampleModal").modal("toggle"); // clear modal w.
   });
 });
