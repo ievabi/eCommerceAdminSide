@@ -45,3 +45,7 @@ body {
 .container{
     overflow-y: scroll;
 }
+
+#footer{
+    background-color: #fff;
+}
