@@ -17,15 +17,33 @@ $(document).ready(function () {
 });
 
 
+$('#add-category').click(function () {
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    'use strict'
 
-$('#save-category').click(function () {
-    const tableElement = $('#table_categories');
-    const newTitle = $('#input-title').value ;
-    const newDescription = $('#input-description').value;
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+                form.classList.add('was-validated')
+            }, false)
+        })
+    
+    if (($('#input-title').val() != '') && ($('#input-description').val() != '')) {
+        const tableElement = $('#table_categories');
+    const newTitle = $('#input-title').val();
+    const newDescription = $('#input-description').val();
     const rowCount = tableElement.find('tr').length;
     const newEntry = `
     <tr>
-        <th scope="row">${rowCount+1}</th>
+        <th scope="row">${rowCount + 1}</th>
         <td> ${newTitle} </td>
         <td> ${newDescription} </td>
         <td class="text-end">
@@ -35,5 +53,8 @@ $('#save-category').click(function () {
      </tr>
     `;
     tableElement.find('tbody').append(newEntry);
-
+    $('#input-title').val('');
+    $('#input-description').val('');
+    $('#createCategoryModal').modal('toggle');
+    }
 })
