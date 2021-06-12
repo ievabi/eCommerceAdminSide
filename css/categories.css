@@ -41,13 +41,5 @@ body {
     overflow-y: auto;
   }
   
-  /* For the table */
 
-  thead, tbody{
-      border: solid 1px black;
-  }
-
-  thead{
-      height: 80px;
-  }
   
