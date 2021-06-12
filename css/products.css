@@ -3,6 +3,7 @@ body {
     min-height: 100vh;
     min-height: -webkit-fill-available;
     background-color: #fff;
+    overflow-y: auto;
   }
   
   html {
@@ -41,3 +42,6 @@ body {
     overflow-y: auto;
   }
   
+.container{
+    overflow-y: scroll;
+}
