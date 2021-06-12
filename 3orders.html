@@ -49,7 +49,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./2products.html" class="nav-link link-dark">
+                    <a href="./2products.html" class="nav-link link-dark ">
                         <svg class="bi me-2" width="16" height="16">
                             <use xlink:href="#grid" />
                         </svg>
@@ -70,49 +70,92 @@
         <div class="b-example-divider"></div>
 
         <div class="container py-5">
-            <div class="row text-end px-5 pb-5">
+
+            <!-- <div class="row text-end px-5 pb-5">
                 <div class="col">
-                    <button class="btn btn-secondary">Create category</button>
+                    <button class="btn btn-secondary">Create product</button>
                 </div>
-            </div>
+            </div> -->
+
             <div class="row table px-3">
-                <table id="table_orders" class="table table-hover align-middle display">
+                <table id="table_products" class="table table-hover align-middle display">
                     <thead class="align-middle ">
                         <tr>
                             <th scope="col">ID</th>
-                            <th scope="col">Title</th>
-                            <th scope="col">Description</th>
-                            <th style="width: 20%;" scope="col"></th>
+                            <th scope="col">Customer</th>
+                            <th scope="col">Products</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Vat</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Status</th>
+                            <th style="width: 15%;" scope="col"></th>
                         </tr>
+
                     </thead>
                     <tbody>
+
                         <tr>
-                            <th scope="row">1</th>
-                            <td>Indoor plants</td>
-                            <td>Plants for indoors</td>
+                            <td scope="row">1</td>
+                            <td scope="row">
+                                <p>Lilu Dalas</p>
+                                <p>Lacplesa street 15</p>
+                                <p>Riga</p>
+                                <p>Latvia</p>
+                            </td>
+                            <td>10</td>
+                            <td><span>100.00</span><span> €</span></td>
+                            <td><span>21.00</span><span> €</span></td>
+                            <td><span>121.00</span><span> €</span></td>
+                            <td><span class="badge bg-warning text-dark ">Pending</span> </td>
+
                             <td class="text-end">
-                                <button class="btn btn-primary">Edit</button>
-                                <button class="btn btn-danger">Delete</button>
+                                <button style="width: 40%;" scope="col" class="btn btn-primary ">Edit</button>
+                                <button style="width: 55%;" scope="col" class="btn btn-danger">Delete</button>
                             </td>
                         </tr>
+
                         <tr>
-                            <th scope="row">2</th>
-                            <td>Outdoor plants</td>
-                            <td>Plants for outdoors</td>
+                            <td scope="row">2</td>
+                            <td scope="row">
+                                <p>Lilu Dalas</p>
+                                <p>Lacplesa street 15</p>
+                                <p>Riga</p>
+                                <p>Latvia</p>
+                            </td>
+                            <td>8</td>
+                            <td><span>100.00</span><span> €</span></td>
+                            <td><span>21.00</span><span> €</span></td>
+                            <td><span>821.00</span><span> €</span></td>
+                            <td><span class="badge bg-success text-dark ">Completed</span> </td>
+
                             <td class="text-end">
-                                <button class="btn btn-primary">Edit</button>
-                                <button class="btn btn-danger">Delete</button>
+                                <button style="width: 40%;" scope="col" class="btn btn-primary ">Edit</button>
+                                <button style="width: 55%;" scope="col" class="btn btn-danger">Delete</button>
                             </td>
                         </tr>
+
                         <tr>
-                            <th scope="row">3</th>
-                            <td>Accessories</td>
-                            <td>Tools and equipement for planting</td>
+                            <td scope="row">3</td>
+                            <td scope="row">
+                                <p>Lilu Dalas</p>
+                                <p>Lacplesa street 15</p>
+                                <p>Riga</p>
+                                <p>Latvia</p>
+                            </td>
+                            <td>5</td>
+                            <td><span>100.00</span><span> €</span></td>
+                            <td><span>21.00</span><span> €</span></td>
+                            <td><span>521.00</span><span> €</span></td>
+                            <td><span class="badge bg-warning text-dark ">Canceled</span> </td>
+
                             <td class="text-end">
-                                <button class="btn btn-primary">Edit</button>
-                                <button class="btn btn-danger">Delete</button>
+                                <button style="width: 40%;" scope="col" class="btn btn-primary ">Edit</button>
+                                <button style="width: 55%;" scope="col" class="btn btn-danger">Delete</button>
                             </td>
                         </tr>
+
+
+
                     </tbody>
                 </table>
 
@@ -128,14 +171,13 @@
     </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-        crossorigin="anonymous"></script>
-        <script
-    src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
-    crossorigin="anonymous"></script>
-        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
-<script src="./js/main.js"></script>
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js">
+    </script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
