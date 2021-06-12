@@ -1,22 +1,25 @@
 $(document).ready(function () {
     $('#table_categories').DataTable({
-        "order": [[0, "desc"]]
+        "order": [[0, "asc"]]
     });
 });
 
 $(document).ready(function () {
     $('#table_products').DataTable({
-        "order": [[0, "desc"]]
+        "order": [[1, "asc"]]
     });
 });
 
 $(document).ready(function () {
     $('#table_orders').DataTable({
-        "order": [[0, "desc"]]
+        "order": [[0, "asc"]]
     });
 });
 
-
+$(".delete").click(function () {
+    $(this).parents(".product_row").remove();
+  });
+  
 $('#add-category').click(function () {
     // Example starter JavaScript for disabling form submissions if there are invalid fields
     'use strict'

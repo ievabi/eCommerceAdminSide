@@ -35,9 +35,22 @@
     <main>
 
         <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 200px;">
-            <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-                <span class="fs-4">Flower Shop</span>
+            <a href="#" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <img src="./images/logo.png" class="img-fluid" style="width: 60px;" alt="">
+                    </div>
+                    <div class="col-12">
+                        <div class="fs-4">Flower shop</div>
+                    </div>
+                    <div class="col-12">
+                        <div class="fst-italic fs-6"><small>You are logged in as <span class="fw-bold">Ieva</span></small> </div>
+                    </div>
+                </div>
             </a>
+            <div class="col-12 text-center">
+                <a href="./index.html"> <button class="btn btn-sm btn-warning">Log out</button></a>
+            </div>
             <hr>
             <ul class="nav nav-pills flex-column mb-auto">
                 <li>
@@ -89,7 +102,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr class="product_row">
                             <th scope="row"><img src="./images/Products/indoor_plant_1.jpg" class="img-fluid" style="width: 100px;"></th>
                             <th scope="row">1</th>
                             <td>Zamioculcas zamiifolia</td>
@@ -98,10 +111,10 @@
                             <td><span>15.00</span><span> €</span></td>
                             <td class="text-end">
                                 <button class="btn btn-primary">Edit</button>
-                                <button class="btn btn-danger">Delete</button>
+                                <button class="btn btn-danger delete">Delete</button>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="product_row">
                             <th scope="row"><img src="./images/Products/indoor_plant_2.jpg" class="img-fluid" style="width: 100px;"></th>
                             <th scope="row">2</th>
                             <td>Sansevieria trifasciata "Moonshine"</td>
@@ -110,10 +123,10 @@
                             <td><span>12.50</span><span> €</span></td>
                             <td class="text-end">
                                 <button class="btn btn-primary">Edit</button>
-                                <button class="btn btn-danger">Delete</button>
+                                <button class="btn btn-danger delete">Delete</button>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="product_row">
                             <th scope="row"><img src="./images/Products/indoor_plant_3.jpg" class="img-fluid" style="width: 100px;"></th>
                             <th scope="row">3</th>
                             <td>Jade plant (Crassula ovata)</td>
@@ -122,10 +135,10 @@
                             <td><span>13.99</span><span> €</span></td>
                             <td class="text-end">
                                 <button class="btn btn-primary">Edit</button>
-                                <button class="btn btn-danger">Delete</button>
+                                <button class="btn btn-danger delete">Delete</button>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="product_row">
                             <th scope="row"><img src="./images/Products/indoor_plant_4.jpg" class="img-fluid" style="width: 100px;"></th>
                             <th scope="row">4</th>
                             <td>Peace Lily (Spathiphyllum wallisii)</td>
@@ -134,10 +147,10 @@
                             <td><span>8.99</span><span> €</span></td>
                             <td class="text-end">
                                 <button class="btn btn-primary">Edit</button>
-                                <button class="btn btn-danger">Delete</button>
+                                <button class="btn btn-danger delete">Delete</button>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="product_row">
                             <th scope="row"><img src="./images/Products/outdoor_plants_1.jpeg" class="img-fluid" style="width: 100px;"></th>
                             <th scope="row">5</th>
                             <td>White Pampas Grass (Cortaderia selloana)</td>
@@ -146,10 +159,10 @@
                             <td><span>12.50</span><span> €</span></td>
                             <td class="text-end">
                                 <button class="btn btn-primary">Edit</button>
-                                <button class="btn btn-danger">Delete</button>
+                                <button class="btn btn-danger delete">Delete</button>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="product_row">
                             <th scope="row"><img src="./images/Products/outdoor_plants_2.jpeg" class="img-fluid" style="width: 100px;"></th>
                             <th scope="row">6</th>
                             <td>Mandarin orange (Citrus reticulata)</td>
@@ -158,10 +171,10 @@
                             <td><span>22.50</span><span> €</span></td>
                             <td class="text-end">
                                 <button class="btn btn-primary">Edit</button>
-                                <button class="btn btn-danger">Delete</button>
+                                <button class="btn btn-danger delete">Delete</button>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="product_row">
                             <th scope="row"><img src="./images/Products/Accessories1.jpg" class="img-fluid" style="width: 100px;"></th>
                             <th scope="row">7</th>
                             <td>Flower pots "Soul"</td>
@@ -170,7 +183,7 @@
                             <td><span>4.50</span><span> €</span></td>
                             <td class="text-end">
                                 <button class="btn btn-primary">Edit</button>
-                                <button class="btn btn-danger">Delete</button>
+                                <button class="btn btn-danger delete">Delete</button>
                             </td>
                         </tr>
                     </tbody>
