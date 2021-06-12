@@ -35,9 +35,22 @@
     <main>
 
         <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 200px;">
-            <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-                <span class="fs-4">Flower Shop</span>
+            <a href="#" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <img src="./images/logo.png" class="img-fluid" style="width: 60px;" alt="">
+                    </div>
+                    <div class="col-12">
+                        <div class="fs-4">Flower shop</div>
+                    </div>
+                    <div class="col-12">
+                        <div class="fst-italic fs-6"><small>You are logged in as <span class="fw-bold">Ieva</span></small> </div>
+                    </div>
+                </div>
             </a>
+            <div class="col-12 text-center">
+                <a href="./index.html"> <button class="btn btn-sm btn-warning">Log out</button></a>
+            </div>
             <hr>
             <ul class="nav nav-pills flex-column mb-auto">
                 <li>
@@ -123,31 +136,31 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr class="product_row">
                             <th scope="row">1</th>
                             <td>Indoor plants</td>
                             <td>Plants for indoors</td>
                             <td class="text-end">
                                 <button class="btn btn-primary">Edit</button>
-                                <button class="btn btn-danger">Delete</button>
+                                <button class="btn btn-danger delete">Delete</button>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="product_row">
                             <th scope="row">2</th>
                             <td>Outdoor plants</td>
                             <td>Plants for outdoors</td>
                             <td class="text-end">
                                 <button class="btn btn-primary">Edit</button>
-                                <button class="btn btn-danger">Delete</button>
+                                <button class="btn btn-danger delete">Delete</button>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="product_row">
                             <th scope="row">3</th>
                             <td>Accessories</td>
                             <td>Tools and equipement for planting</td>
                             <td class="text-end">
                                 <button class="btn btn-primary">Edit</button>
-                                <button class="btn btn-danger">Delete</button>
+                                <button class="btn btn-danger delete">Delete</button>
                             </td>
                         </tr>
                     </tbody>
