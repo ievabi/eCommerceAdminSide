@@ -86,7 +86,7 @@
 
         <div class="b-example-divider"></div>
 
-        <div class="container py-5">
+        <div class="container pt-5 pb-3">
 
             <div class="row text-end px-5 pb-5">
                 <div class="col">
@@ -131,7 +131,7 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="input-vat" class="form-label">Vat</label>
-                                        <input type="text" class="form-control" id="input-vat">
+                                        <input type="text" class="form-control" id="input-vat" disabled>
                                     </div>
 
                                 </div>
@@ -173,8 +173,8 @@
                             </td>
                             <td class="product">2</td>
                             <td><span class="price">50.00</span><span> €</span></td>
-                            <td><span class="vat"> 21.00</span><span> €</span></td>
-                            <td><span class="total">0.00</span><span> €</span></td>
+                            <td><span class="vat"> 10.50</span><span> €</span></td>
+                            <td><span class="total">60.50</span><span> €</span></td>
                             <td><span class="badge badge-warning"> Pending</span> </td>
 
                             <td class="text-end">
@@ -194,8 +194,8 @@
                             </td>
                             <td class="product">4</td>
                             <td><span class="price">40.00</span><span> €</span></td>
-                            <td><span class="vat"> 21.00</span><span> €</span></td>
-                            <td><span class="total">0.00</span><span> €</span></td>
+                            <td><span class="vat"> 8.40</span><span> €</span></td>
+                            <td><span class="total">48.40</span><span> €</span></td>
                             <td><span class="badge badge-completed"> Completed</span> </td>
 
                             <td class="text-end">
@@ -215,8 +215,8 @@
                             </td>
                             <td class="product">5</td>
                             <td><span class="price">60.00</span><span> €</span></td>
-                            <td><span class="vat"> 21.00</span><span> €</span></td>
-                            <td><span class="total">0.00</span><span> €</span></td>
+                            <td><span class="vat"> 12.60</span><span> €</span></td>
+                            <td><span class="total">72.60</span><span> €</span></td>
                             <td><span class="badge badge-canceled "> Canceled</span> </td>
 
                             <td class="text-end">
@@ -228,17 +228,16 @@
 
                     </tbody>
                 </table>
-
+                <footer class="footer mt-2 py-1 fixed-bottom text-center" id="footer">
+                    <div class="container">
+                        <span>&copy; SGT 2021</span>
+                    </div>
+                </footer>
             </div>
+           
         </div>
 
     </main>
-
-    <footer class="footer mt-2 py-1 fixed-bottom text-center" id="footer">
-        <div class="container">
-            <span>&copy; SGT 2021</span>
-        </div>
-    </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
@@ -251,7 +250,8 @@
     <script type="text/javascript"
         src="https://cdn.datatables.net/v/dt/jqc-1.12.4/dt-1.10.25/b-1.7.1/sl-1.3.3/datatables.min.js"></script>
     <script src="./js/main.js"></script>
-    <script src="./js/main3.js"></script>
+    <!-- <script src="./js/main3.js"></script> -->
+    <script src="./js/orders_ieva.js"></script>
 </body>
 
 </html>
