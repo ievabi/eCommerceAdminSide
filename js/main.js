@@ -1,6 +1,8 @@
 $(document).ready(function () {
   $("#table_categories").DataTable({
     order: [[0, "asc"]],
+    //  "sDom": ' f t  p',
+    info: false,
     "columns": [
       null,
       null,
@@ -13,6 +15,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $("#table_products").DataTable({
     order: [[1, "asc"]],
+    info: false,
     "columns": [
       null,
       null,
@@ -28,6 +31,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $("#table_orders").DataTable({
     order: [[0, "asc"]],
+    info: false,
     "columns": [
       null,
       null,
