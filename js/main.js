@@ -49,7 +49,7 @@ $("#add-category").click(function () {
     const rowCount = tableElement.find("tr").length;
     const newEntry = `
     <tr>
-        <th scope="row">${rowCount + 1}</th>
+        <th scope="row">${rowCount}</th>
         <td> ${newTitle} </td>
         <td> ${newDescription} </td>
         <td class="text-end">
