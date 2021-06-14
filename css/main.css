@@ -76,3 +76,10 @@ main {
 .nav-link {
   color: darkgreen;
 }
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: darkgreen;
+}
+.border {
+  border: 1px solid transparent !important;
+}
