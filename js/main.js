@@ -1,18 +1,43 @@
 $(document).ready(function () {
   $("#table_categories").DataTable({
     order: [[0, "asc"]],
+    "columns": [
+      null,
+      null,
+      null,
+      { "orderable": false }
+  ]
   });
 });
 
 $(document).ready(function () {
   $("#table_products").DataTable({
     order: [[1, "asc"]],
+    "columns": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      { "orderable": false }
+  ]
   });
 });
 
 $(document).ready(function () {
   $("#table_orders").DataTable({
     order: [[0, "asc"]],
+    "columns": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      { "orderable": false }
+  ]
   });
 });
 
